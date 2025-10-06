@@ -43,7 +43,7 @@ class CreditRiskModel:
             self.best_model_name = max(results, key=lambda m: results[m]["f1_score"])
             self.best_model = self.models[self.best_model_name]
 
-            return results, self.best_model_name
+        return results, self.best_model_name
         
 
     def save_model(self, filepath="models/credit_risk_model.pkl"):
@@ -55,5 +55,9 @@ class CreditRiskModel:
 
     def load_model(self, filepath="models/credit_risk_model.pkl"):
         self.best_model = joblib.load(filepath)
-        print(f"🔄 Model loaded from {filepath}")
+        print(f"Model loaded from {filepath}")
         return self.best_model
+    
+
+
+
