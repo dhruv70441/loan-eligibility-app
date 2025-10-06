@@ -79,6 +79,7 @@ class CreditRiskModel:
 
         for name, model in self.models.items():
             tuned_model = self.tune_and_train_model(name, model, X_train, y_train)
+            self.models[name] = tuned_model
             metrics = self.evaluate_model(tuned_model, X_test, y_test)
             self.results[name] = metrics
 
