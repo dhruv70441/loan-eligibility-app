@@ -59,5 +59,49 @@ class CreditRiskModel:
         return self.best_model
     
 
+#==============================================================================
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
+
+def tune_model(self, model_name, X, y):
+    if model_name == "RandomForest":
+        param_grid = {
+            "n_estimators": [100, 200, 300],
+            "max_depth": [5, 10, 15, None],
+            "min_samples_split": [2, 5, 10]
+        }
+
+    elif model_name == "XGBoost":
+        param_grid = {
+            "n_estimators": [100, 200],
+            "max_depth": [3, 5, 7],
+            "learning_rate": [0.01, 0.1, 0.2]
+        }
+
+    elif model_name == "LogisticsRegression":
+        param_grid = {"C": [0.1, 1, 10], "solver": ["liblinear", "lbfgs"]}
+
+    elif model_name == "GradientBoosting":
+        param_grid = {
+            "n_estimators": [100, 200],
+            "learning_rate": [0.05, 0.1],
+            "max_depth": [3, 5]
+        }
+
+    else:
+        raise ValueError(f"Unknown model: {model_name}")
+
+    search = GridSearchCV(
+        self.models[model_name],
+        param_grid,
+        scoring="f1",
+        cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=42),
+        n_jobs=-1
+    )
+
+    search.fit(X, y)
+    print(f"Best {model_name} params: {search.best_params_}")
+    self.models[model_name] = search.best_estimator_
+ 
+
 
 
