@@ -21,5 +21,8 @@ class DataCleaner:
     def remove_duplicates(self):
         self.master_df.drop_duplicates()
         return self
+    
+    def get_processed_data(self):
+        return self.master_df
 
 
