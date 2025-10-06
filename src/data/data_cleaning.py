@@ -3,7 +3,7 @@ import numpy as np
 
 class DataCleaner:
     def __init__(self, df: pd.DataFrame):
-        self.master_df = df
+        self.master_df = df.copy()
 
     def handle_missing_values(self):
         num_col = self.master_df.select_dtypes(np.number).columns
