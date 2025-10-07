@@ -159,10 +159,10 @@ The system automatically trains and evaluates multiple models:
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |-------|----------|-----------|--------|----------|---------|
-| Logistic Regression | - | - | - | - | - |
-| Random Forest | - | - | - | - | - |
-| Gradient Boosting | - | - | - | - | - |
-| XGBoost | - | - | - | - | - |
+| Logistic Regression | 0.86 | 0.84 | 0.99 | 0.91 | 0.80 |
+| Random Forest | 0.85 | 0.83 | 0.99 | 0.90 | 0.80 |
+| Gradient Boosting | 0.82 | 0.81 | 0.96 | 0.88 | 0.71 |
+| XGBoost | 0.85 | 0.83 | 0.99 | 0.90 | 0.78 |
 
 *Note: Actual performance metrics will be displayed after running the training script*
 
