@@ -1,14 +1,3 @@
-import os
-import sys
-
-# Get the absolute path of the project root (loan_app)
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-
-# Add the project root to sys.path (Python’s import search list)
-if project_root not in sys.path:
-    sys.path.append(project_root)
-
-
 import streamlit as st
 import pandas as pd
 from loan_eligibility.pipeline.prediction_pipeline import PredictionPipeline
