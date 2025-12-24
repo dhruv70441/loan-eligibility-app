@@ -7,5 +7,7 @@ matplotlib
 seaborn 
 joblib 
 shap
+fastapi
+uvicorn
 
 -e .

@@ -30,7 +30,7 @@ loan approval prediction/
 │   └── loan-test.csv           # Test dataset
 ├── models/
 │   └── credit_risk_model.pkl   # Trained model file
-├── src/
+├── loan_eligibility/
 │   ├── app/
 │   │   └── app.py              # Streamlit web application
 │   ├── data/
@@ -89,7 +89,7 @@ loan approval prediction/
 Run the training script to train and evaluate multiple models:
 
 ```bash
-python src/utils/train_and_test_model.py
+python loan_eligibility/utils/train_and_test_model.py
 ```
 
 This script will:
@@ -104,7 +104,7 @@ This script will:
 Launch the Streamlit web interface:
 
 ```bash
-streamlit run src/app/app.py
+streamlit run loan_eligibility/app/app.py
 ```
 
 The application will open in your browser at `http://localhost:8501`
@@ -124,7 +124,7 @@ The application will open in your browser at `http://localhost:8501`
 ### 3. Programmatic Usage
 
 ```python
-from src.pipeline.prediction_pipeline import PredictionPipeline
+from loan_eligibility.pipeline.prediction_pipeline import PredictionPipeline
 import pandas as pd
 
 # Initialize prediction pipeline

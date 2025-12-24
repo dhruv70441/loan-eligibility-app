@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
-from src.data.data_cleaning import DataCleaner
+from loan_eligibility.data.data_cleaning import DataCleaner
 
 class FeatureProcessor:
     def __init__(self, df: pd.DataFrame):

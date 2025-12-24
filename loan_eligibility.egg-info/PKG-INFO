@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: loan-eligibility
+Version: 0.1.0
+Summary: Loan eligibility prediction system
+Author: Dhruv Parmar
+Author-email: dhruvparmar70441@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+Requires-Dist: streamlit
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: joblib
+Requires-Dist: shap
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary

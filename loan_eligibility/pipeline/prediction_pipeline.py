@@ -1,7 +1,7 @@
 import pandas as pd
-from src.data.data_cleaning import DataCleaner
-from src.data.feature_engineering import FeatureProcessor
-from src.model.credit_risk_model import CreditRiskModel
+from loan_eligibility.data.data_cleaning import DataCleaner
+from loan_eligibility.data.feature_engineering import FeatureProcessor
+from loan_eligibility.model.credit_risk_model import CreditRiskModel
 
 class PredictionPipeline:
     def __init__(self, model_path="models/credit_risk_model.pkl"):
