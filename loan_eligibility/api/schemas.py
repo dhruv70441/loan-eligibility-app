@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Literal
+from typing import Literal, List
 
 class LoanApplication(BaseModel):
     Gender: Literal["Male", "Female"]
@@ -13,3 +13,7 @@ class LoanApplication(BaseModel):
     Loan_Amount_Term: float
     Credit_History: int
     Property_Area: Literal["Urban", "Semiurban", "Rural"]
+
+
+class BulkLoanApplication(BaseModel):
+    application: List[LoanApplication]

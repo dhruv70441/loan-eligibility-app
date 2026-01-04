@@ -15,6 +15,7 @@ Requires-Dist: joblib
 Requires-Dist: shap
 Requires-Dist: fastapi
 Requires-Dist: uvicorn
+Requires-Dist: pydantic
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

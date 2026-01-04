@@ -9,5 +9,5 @@ joblib
 shap
 fastapi
 uvicorn
-
+pydantic
 -e .
