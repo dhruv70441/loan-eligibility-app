@@ -1,4 +1,48 @@
+# Python cache
 __pycache__/
-*.pyc
-.env
-venv
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build & Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Tools cache
+.cache/
+pytest_cache/
+.mypy_cache/
+ruff_cache/
+.hatch_cache/
+.uv_cache/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Data / Models (ML)
+data/
+datasets/
+models/
+checkpoints/
+artifacts/
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db

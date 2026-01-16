@@ -1,0 +1,18 @@
+[project]
+name = "loan_approval_prediction"
+version = "0.1.0"
+dependencies = [
+    "pandas", 
+    "numpy", 
+    "scikit-learn", 
+    "xgboost", 
+    "streamlit", 
+    "matplotlib", 
+    "seaborn", 
+    "joblib", 
+    "shap"
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
