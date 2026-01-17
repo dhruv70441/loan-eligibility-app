@@ -11,7 +11,7 @@ if project_root not in sys.path:
 
 import streamlit as st
 import pandas as pd
-from src.pipeline.prediction_pipeline import PredictionPipeline
+from loan_approval_prediction.pipeline.prediction_pipeline import PredictionPipeline
 
 st.set_page_config(page_title="Loan Eligibility Checker", layout="wide")
 st.title("🏦 Loan Eligibility Prediction App")

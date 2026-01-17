@@ -2,10 +2,10 @@ import warnings
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 
-from src.data.data_cleaning import DataCleaner
-from src.data.feature_engineering import FeatureProcessor
-from src.model.credit_risk_model import CreditRiskModel
-from src.pipeline.prediction_pipeline import PredictionPipeline
+from loan_approval_prediction.data.data_cleaning import DataCleaner
+from loan_approval_prediction.data.feature_engineering import FeatureProcessor
+from loan_approval_prediction.model.credit_risk_model import CreditRiskModel
+from loan_approval_prediction.pipeline.prediction_pipeline import PredictionPipeline
 
 warnings.filterwarnings('ignore')
 
